@@ -64,7 +64,7 @@ describe("calculate()", () => {
   test("multiplication via calculate", () => expect(calculate(45, "*", 2)).toBe(90));
   test("division via calculate", () => expect(calculate(20, "/", 5)).toBe(4));
   test("throws on unknown operator", () => {
-    expect(() => calculate(1, "%", 2)).toThrow("Unknown operator '%'");
+    expect(() => calculate(1, "~", 2)).toThrow("Unknown operator '~'");
   });
   test("throws on division by zero via calculate", () => {
     expect(() => calculate(10, "/", 0)).toThrow("Division by zero");
